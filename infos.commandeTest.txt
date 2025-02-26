@@ -1,0 +1,37 @@
+
+Symfony 7.2.4 
+Je  utilise PHPUnit et Symfony 7.2.4  Panther pour les tests E2E
+
+
+
+Installation des dépendances nécessaires
+1) PHPUnit et Symfony Panther doit etre installés
+composer require --dev symfony/test-pack symfony/panther
+
+Installation si nécessaire
+1) Si ce n'est pas encore fait, ajoute aussi les fixtures pour créer des utilisateurs de test
+composer require --dev orm-fixtures
+
+Création d’un utilisateur de test avec les Fixtures
+1) Commande pour charger les fixtures
+php bin/console doctrine:fixtures:load
+
+
+1) Exécuter le test en mode debug
+php bin/phpunit --testdox
+
+
+Test Unitaire : Vérification de l’authentification
+1) Commande pour exécuter le test
+php bin/phpunit
+
+Test Fonctionnel : Connexion avec de bons et mauvais identifiants
+1) Commande pour exécuter les tests fonctionnels 
+php bin/phpunit tests/Functional/LoginTest.php
+
+
+
+
+Test E2E : Simulation complète avec Symfony Panther
+1) Commande pour exécuter le test E2E avec Panther 
+php bin/phpunit tests/E2E/AuthenticationE2ETest.php
