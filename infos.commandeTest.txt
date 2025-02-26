@@ -30,8 +30,6 @@ Test Fonctionnel : Connexion avec de bons et mauvais identifiants
 php bin/phpunit tests/Functional/LoginTest.php
 
 
-
-
 Test E2E : Simulation complète avec Symfony Panther
 1) Commande pour exécuter le test E2E avec Panther 
 php bin/phpunit tests/E2E/AuthenticationE2ETest.php
