@@ -15,3 +15,6 @@ To start
     - email: l'email utilisée en BDD
     - password: MDP utilisé pour le compte en BDD
 - En mode GET sur ` https://localhost:8000/api/testToken `, partez dans Authorization et sélectionner *Bearer Token*, placez la chaîne récupérée dans la précédente requête
+
+- créer un système d’authentification
+- tester le système d’authentification à l’aide des framework de tests (fonctionnel, E2E - End-to-End)
